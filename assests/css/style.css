@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: #FF4533;
+    --white: #fff;
+    --black:#000000;
+    --Mulish: "Mulish", sans-serif;
+    --Monoton:"Monoton", sans-serif;
+    --Anton: "Anton", sans-serif;
+}
+
+#flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transtion {
+    transition: all 0.2s ease-in;
+}
+
+/* HEADER START */
+/* NAVBAR START */
+header {
+    width: 100%;
+    height: 750px;
+    background-image: url(../images/banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    & a {
+        font-family: var(--Anton);
+        font-weight: 400;
+    }
+
+    & .button {
+        width: 166px;
+        height: 50px;
+        text-align: center;
+        background-color: var(--orange);
+        font-family: var(--Anton);
+        &:hover {
+            background-color: transparent;
+            border: 1px solid var(--orange);
+        }
+    }
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 750px;
+        position: absolute;
+        top: 0;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.244) 0%, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.203),black);
+        left: 0;
+    }
+}
+
+.nav-item {
+    transition: all 0.2s ease-in;
+
+    &.nav-item .nav-link:hover {
+        color: var(--orange) !important;
+    }
+}
+/* NAVBAR END */
+
+/* HERO SECTION START */
+.main_text h1{
+    color: var(--orange);
+}
+
+.main_text p{
+    font-family: var(--Monoton);
+    color: var(--white);
+    line-height: 1;
+    letter-spacing: 2px;
+}
+/* HERO SECTION END */
+/* HEADER END */
+
+/* MAIN START */
+#main{
+    background-color: var(--black);
+
+    & h1{
+        font-family: var(--Anton);
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+}
+
+/* MAIN END */
