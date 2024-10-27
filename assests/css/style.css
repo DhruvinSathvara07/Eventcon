@@ -1,98 +1,207 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --orange: #FF4533;
-    --white: #fff;
-    --black:#000000;
-    --Mulish: "Mulish", sans-serif;
-    --Monoton:"Monoton", sans-serif;
-    --Anton: "Anton", sans-serif;
+  --orange: #ff4533;
+  --white: #fff;
+  --black: #000000;  
+  --offwhite:#aab1b7;
+  --Mulish: "Mulish", sans-serif;
+  --Monoton: "Monoton", sans-serif;
+  --Anton: "Anton", sans-serif;
 }
 
 #flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .transtion {
-    transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
+.anton{
+  font-family: var(--Anton);
+}
+
+.mulish{
+  font-family: var(--Mulish);
+}
 /* HEADER START */
+
 /* NAVBAR START */
 header {
+  width: 100%;
+  height: 750px;
+  background-image: url(../images/banner.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  & a {
+    font-family: var(--Anton);
+    font-weight: 400;
+  }
+
+  & .button {
+    width: 166px;
+    height: 50px;
+    text-align: center;
+    background-color: var(--orange);
+    font-family: var(--Anton);
+    &:hover {
+      background-color: transparent;
+      border: 1px solid var(--orange);
+    }
+  }
+
+  &::before {
+    content: "";
     width: 100%;
     height: 750px;
-    background-image: url(../images/banner.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-    & a {
-        font-family: var(--Anton);
-        font-weight: 400;
-    }
-
-    & .button {
-        width: 166px;
-        height: 50px;
-        text-align: center;
-        background-color: var(--orange);
-        font-family: var(--Anton);
-        &:hover {
-            background-color: transparent;
-            border: 1px solid var(--orange);
-        }
-    }
-
-    &::before {
-        content: "";
-        width: 100%;
-        height: 750px;
-        position: absolute;
-        top: 0;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.244) 0%, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.203),black);
-        left: 0;
-    }
+    position: absolute;
+    top: 0;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.244) 0%,
+      rgba(0, 0, 0, 0.14),
+      rgba(0, 0, 0, 0.203),
+      black
+    );
+    left: 0;
+  }
 }
 
 .nav-item {
-    transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 
-    &.nav-item .nav-link:hover {
-        color: var(--orange) !important;
-    }
+  &.nav-item .nav-link:hover {
+    color: var(--orange) !important;
+  }
 }
 /* NAVBAR END */
 
 /* HERO SECTION START */
-.main_text h1{
-    color: var(--orange);
+.main_text h1 {
+  color: var(--orange);
 }
 
-.main_text p{
-    font-family: var(--Monoton);
-    color: var(--white);
-    line-height: 1;
-    letter-spacing: 2px;
+.main_text p {
+  font-family: var(--Monoton);
+  color: var(--white);
+  line-height: 1;
+  letter-spacing: 2px;
 }
 /* HERO SECTION END */
-/* HEADER END */
 
 /* MAIN START */
-#main{
-    background-color: var(--black);
 
-    & h1{
-        font-family: var(--Anton);
-        font-weight: 400;
-        letter-spacing: 2px;
-    }
+/* PERFORMER SECTION START */
+.section_title h3{
+  font-size: 72px;
+  font-weight: 400;
+  padding: 7px;
 }
 
-/* MAIN END */
+.performer_images{
+  height: 435px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.first_performer{  
+  background-image: url(../images/1.png.webp);
+}
+
+.second_performer{
+  background-image: url(../images/2.png.webp);
+}
+
+.third_performer{
+  background-image: url(../images/3.png.webp);
+}
+
+.fourth_performer{
+  background-image: url(../images/4.png.webp);
+}
+.drum{
+  color: var(--orange);
+}
+
+/* PERFORMER SECTION END */
+
+/* ABOUT PROGRAME SECTION START */
+.para{
+  color: var(--offwhite);
+}
+
+.about_program_image{
+  width: 635px;
+  height: 468px;
+}
+
+.about_info h3{
+  color: var(--orange);
+}
+
+.btn_buy{
+  width: 184px;
+  height: 59px;
+  color: var(--white) !important;
+  padding: 11px;
+  text-align: center;
+  background-color:var(--orange) !important;
+
+  &:hover{
+    border: 1px solid var(--orange) !important;
+    color: var(--orange) !important;
+    background-color: transparent !important;
+    cursor: pointer;
+  }
+}
+/* ABOUT PROGRAME SECTION END */
+
+/* FOOTER START */
+.text h3{
+  color: var(--orange);
+}
+
+.sponsor{
+  width: 277px !important;
+  height: 120px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sponsor_one{
+  background-image: url(../images/verticle.png);
+}
+
+.sponsor_two{
+  background-image: url(../images/shallow.png);
+}
+
+.sponsor_three{
+  background-image: url(../images/diggo.png);
+}
+
+.sponsor_four{
+  background-image: url(../images/next.webp);
+} 
+
+.footer_top p{
+font-weight: 400;
+}
+
+.mulish p,.copyright p{
+  color: var(--offwhite);
+  font-weight: 400;
+}
+
+/* FOOTER END */
