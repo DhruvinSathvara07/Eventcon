@@ -75,6 +75,13 @@ header {
     left: 0;
   }
 }
+/* 
+#navbar{
+  position: sticky;
+  top: 0; 
+  bottom: 1000000px;
+  z-index: 1000;
+} */
 
 .nav-item {
   transition: all 0.2s ease-in;

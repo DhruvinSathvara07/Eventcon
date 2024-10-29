@@ -11,6 +11,7 @@
 
     <!-- CSS FILE -->
     <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="stylesheet" href="assests/css/animate.css">
 
     <!-- BOOTSTRAP CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -25,6 +26,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Monoton&display=swap" rel="stylesheet">
 
+    <!-- ANIMATION PLUGIN -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- FONT AWESOME CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -33,7 +37,7 @@
 
     <!-- HEADER START -->
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg" id="navbar">
             <div class="container mt-4">
                 <a class="navbar-brand text-light fs-1" href="#"><img src="assests/images/logo.png.webp"
                         class="img-fluid" alt="logo image"></a>
@@ -74,9 +78,9 @@
                 <div class=" date">
                     <div class="text">
                         <div class="main_text">
-                            <h1 class="text-center fs-1  fw-bold">12 Feb,2024</h1>
-                            <p class="mt-4 fw-3 display-1 text-center">CONCERT 2024</p>
-                            <h2 class="text-light text-center fw-bolder">Green Avenue,New York</h2>
+                            <h1 class="text-center wow fadeInLeft fs-1 fw-bold" data-wow-delay=".3s" data-wow-duration="1s">12 Feb,2024</h1>
+                            <p class="mt-4 fw-3 display-1 text-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">CONCERT 2024</p>
+                            <h2 class="text-light text-center wow fadeInLeft fw-bolder" data-wow-duration="1s" data-wow-delay=".5s">Green Avenue,New York</h2>
                         </div>
                     </div>
                 </div>
@@ -95,21 +99,21 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="section_title d-flex justify-content-center justify-content-lg-start">
-                    <h3 class="ms-0 ms-md-5 ms-lg-5 text-light anton">Performer</h3>
+                    <h3 class="ms-0 ms-md-5 ms-lg-5 text-light anton wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Performer</h3>
                 </div>
             </div>
             <div class="row d-flex justify-content-center mt-5">
                  <div class="col-lg-8">
                     <div class="row">
-                        <div class="col-lg-6 col-md-6">
+                        <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                             <div class="first_performer performer_images"></div>
-                            <p class="singer_name mb-2 mt-3 fs-2 mt-3 anton text-light">Mr. Zosoldos</p>
-                            <p class="drum fs-5">Acoustic drum</p>
+                            <p class="singer_name mb-2 mt-3 fs-2 mt-3 anton text-light wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">Mr. Zosoldos</p>
+                            <p class="drum fs-5 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">Acoustic drum</p>
                         </div>
                         <div class="col-lg-6 col-md-6">
-                            <div class="second_performer performer_images"></div>
-                            <p class="singer_name mb-2 fs-2 mt-3 anton text-light">Protik Hasan</p>
-                            <p class="drum fs-5">Acoustic drum</p>
+                            <div class="second_performer wow fadeInUp performer_images" data-wow-duration="1s" data-wow-delay=".3s"></div>
+                            <p class="singer_name mb-2 fs-2 mt-3 anton text-light wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">Protik Hasan</p>
+                            <p class="drum fs-5 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">Acoustic drum</p>
                         </div>
                     </div>
                  </div>
@@ -118,14 +122,14 @@
                 <div class="col-lg-8">
                    <div class="row">
                        <div class="col-lg-6 col-md-6">
-                           <div class="third_performer performer_images"></div>
-                           <p class="singer_name mb-2 mt-3 fs-2 mt-3 anton text-light">Salmon Vicky</p>
-                           <p class="drum fs-5">Acoustic drum</p>
+                           <div class="third_performer wow fadeInUp performer_images" data-wow-duration="1s" data-wow-delay=".3s"></div>
+                           <p class="singer_name mb-2 mt-3 fs-2 mt-3 anton text-light  wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">Salmon Vicky</p>
+                           <p class="drum fs-5  wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">Acoustic drum</p>
                        </div>
                        <div class="col-lg-6 col-md-6">
-                           <div class="fourth_performer performer_images"></div>
-                           <p class="singer_name mb-2 fs-2 mt-3 anton text-light">Filaris Habol</p>
-                           <p class="drum fs-5">Acoustic drum</p>
+                           <div class="fourth_performer wow fadeInUp performer_images" data-wow-duration="1s" data-wow-delay=".3s"></div>
+                           <p class="singer_name mb-2 fs-2 mt-3 anton text-light  wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">Filaris Habol</p>
+                           <p class="drum fs-5  wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">Acoustic drum</p>
                        </div>
                    </div>
                 </div>
@@ -142,20 +146,21 @@
                 <div class="col-lg-12">
                     <div class="row d-flex justify-content-center">
                         <div class="col-lg-8 text-center">
-                            <h3 class="text-light anton display-1">About Program</h3>
-                                  <p class="mb-0 para fs-5">The event regularly attracts a diverse range of attendees from around the</p>
-                                  <p class="para fs-5">world, across different professions, and with different.</p>
+                            <h3 class="text-light anton display-1 wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">About Program</h3>
+                                  <p class="mb-0 para fs-5 wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">The event regularly attracts a diverse range of attendees from around the</p>
+                                  <p class="para fs-5 wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">world, across different professions, and with different.</p>
+                            </h3>
                         </div>
                     </div>
                     <div class="container">
                         <div class="row mt-5 pt-3">
-                            <div class="col-12 col-lg-7">
+                            <div class="col-12 col-lg-7 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                               <img src="assests/images/about.png.webp" alt="aboutprogram" class="img-fluid about_program_image">
                             </div>
                             <div class="col-12 col-lg-5 col-md-12 text-center text-md-center text-lg-start">
                                 <div class="about_info mt-5 mt-md-0 mt-lg-3">
-                                    <h3 class="fs-3 anton">It's time to book your seat</h3>
-                                    <div class="para fs-4 mt-4 mt-md-0 pt-2 pt-md-2">
+                                    <h3 class="fs-3 anton wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">It's time to book your seat</h3>
+                                    <div class="para fs-4 mt-4 mt-md-0 pt-2 pt-md-2 wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".6s">
                                         <p class="mb-0">The event regularly attracts a  </p>
                                         <p class="mb-0">range of attendees from around  </p>
                                         <p class="mb-0">world, across different professions, and </p>
@@ -163,7 +168,7 @@
                                         <p class="mb-0">transform  business</p>
                                     </div>
                                 </div>
-                                <div class="d-flex justify-content-center justify-content-lg-start">
+                                <div class="d-flex justify-content-center justify-content-lg-start wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".1s">
                                     <div class="mt-4 btn_buy anton fs-4 transtion">Buy Tickets</div>
                                 </div>
                             </div>
@@ -186,7 +191,7 @@
                        <div class="row">
                         <div class="col-lg-12">
                             <div class="text mt-3 pt-5">
-                                <h3 class="anton text-center mt-5 pt-5 display-4 fw-bold">Sponsor Logos</h3>
+                                <h3 class="anton text-center mt-5 pt-5 display-4 fw-bold wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Sponsor Logos</h3>
                             </div>
                         </div>
                         <div class="row d-flex justify-content-center mt-5">
@@ -209,17 +214,19 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-6 text-center">
                             <div class="text mt-3 pt-5">
-                                <h3 class="anton mt-5 pt-5 fs-2 fw-bold">12 Feb, 2024</h3>
-                                 <p class="text-light fs-2 mt-3 anton">Green Avenue, New York</p>   
+                                <h3 class="anton mt-5 pt-5 fs-2 fw-bold wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">12 Feb, 2024</h3>
+                                 <p class="text-light fs-2 mt-3 anton wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">Green Avenue, New York</p>   
                                  <div class="mulish fs-5">
-                                    <p class="mb-0">The event regularly attracts a diverse range of attendees</p>
-                                 <p>from around the world.</p>
-                                 <div class="d-flex justify-content-center">
+                                    <p class="mb-0 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">The event regularly attracts a diverse range of attendees</p>
+                                    <p class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">from around the world.</p>
+                                 <div class="d-flex justify-content-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
                                     <div class="mt-4 btn_buy anton fs-4 transtion">Buy Tickets</div>
                                 </div>
                             </div>
-                            <div class="copyright">
-                              <p class="mt-5 fs-6">Copyright ©2024 All rights reserved | This template is made with by <i class="fa-regular fa-heart"></i> <b class="text-danger">D.N.SATHVARA</b></p>
+                            <div class="copyright mt-5">
+                            <div class="mt-5">
+                                <p class="mt-5 fs-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">Copyright ©2024 All rights reserved | This template is made with by <i class="fa-regular fa-heart"></i> <b class="text-danger">D.N.SATHVARA</b></p>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -235,6 +242,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
+    <!-- ANIMATION -->
+     <script src="assests/js/wow.min.js"></script>
+     <script>
+        new WOW().init();
+        </script>
+   
 </body>
 
 </html>
